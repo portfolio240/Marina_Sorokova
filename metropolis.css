@@ -1,0 +1,437 @@
+/* Font and basic styles */
+@font-face {
+  font-family: "MyCustomFont";
+  src: url('https://cdn.glitch.global/fdb54953-0b9f-474d-9306-a5dd00c4e25a/Hey%20Guys!%20Demo.otf?v=1727351218815');
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 500vh;
+  width: 100%;
+  
+}
+
+
+body {
+  color: #ef8eaa;
+  background: #eb5619;
+  font-family: "MyCustomFont", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  position: relative;
+  top: 3vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  font-size: 4vh;
+  text-decoration: none;
+  padding: 0 4vw;
+}
+.link1 {
+  margin-left: 6vh;
+}
+
+.link4 {
+  margin-right: 6vh;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Flexbox container for image and text */
+.flex-container {
+  display: flex;
+  align-items: flex-start; /* Align items at the top */
+  justify-content: space-between; /* Keep space between image and text */
+  padding: 5vh 5vw;
+  flex-wrap: nowrap; /* Prevent items from wrapping */
+}
+
+/* Image container */
+.images1 {
+  width: 30vw; /* Adjust the width of the image */
+  height: auto; /* Keep aspect ratio */
+  margin-right: 2vw; /* Space between image and text */
+  padding-left: 5vw;
+  padding-top: 3vh;
+}
+
+.images1 img {
+  width: 100%; /* Prevent images from overflowing */
+  height: auto;
+  max-width: 100vw; /* Ensure image stays within the viewport */
+}
+
+/* Intro text */
+.intro {
+  width: 40vw; /* Adjust width for text to share space equally with image */
+  display: flex;
+  justify-content: flex-start;
+  position: relative; /* Allows absolute positioning of child elements */
+}
+
+.intro h4 {
+  
+  position: relative;
+  margin-top: 30vh;
+  text-align: right;
+  color: white;
+  font-size: 2.5vh;
+  line-height: 1.5;
+  right: 5vw; /* Adjust left positioning */
+}
+
+/* Intro2 text */
+.intro2 {
+  position: absolute; /* Allow it to overlap */
+  top: 0; /* Positioning it to the top */
+  left: 55%; /* Adjust left positioning */
+  transform: translateX(-50%); /* Center it horizontally */
+  width: 40vw; /* Width of intro2 */
+}
+
+.intro2 h5 {
+  text-decoration: underline;
+  margin-top: 20vh; /* Adjust top margin */
+  text-align: center;
+  color: white;
+  font-size: 4vh;
+  line-height: 1.5;
+}
+
+ /* Research text */
+.research {
+  margin-top: 80.5vh; /* Set spacing for research section */
+  width: 70vw; /* Adjust width for text */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center align items horizontally */
+  align-items: center; /* Center vertically */
+  position: absolute; /* Allows absolute positioning */
+  left: -10%; /* Center horizontally */
+  transform: translateX(-50%); /* Center it */
+  z-index: 2; /* Ensure this is on top */
+}
+
+.research h6 {
+  text-align: center; /* Center text */
+  color: white;
+  font-size: 4vh;
+  line-height: 1.5;
+  text-decoration: underline;
+}
+
+.research2 {
+  width: 70vw; /* Adjust width for text */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center align items horizontally */
+  position: absolute; /* Allows absolute positioning */
+  top: 100vh; /* Positioning it directly below .research */
+  left: -10%; /* Center horizontally */
+  transform: translateX(-50%); /* Center it */
+  z-index: 1; /* Ensure this is below .research */
+}
+
+.research2 h7 {
+  text-align: center; /* Center text */
+  color: white;
+  font-size: 2.5vh;
+  line-height: 1.5;
+}
+/* Brainstorming text */
+.brainstorming {
+  margin-top: 40vh; /* Set spacing for research section */
+  width: 70vw; /* Adjust width for text */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center align items horizontally */
+  align-items: center; /* Center vertically */
+  position: absolute; /* Allows absolute positioning */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center it */
+  z-index: 2; /* Ensure this is on top */
+  padding-top: 4vh;
+ 
+}
+
+.brainstorming h8 {
+  text-align: center; /* Center text */
+  color: white;
+  font-size: 4vh;
+  line-height: 1.5;
+  text-decoration: underline;
+}
+
+.brainstorming {
+  margin-top: 40vh; /* Set spacing for research section */
+  width: 70vw; /* Adjust width for text */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center align items horizontally */
+  align-items: center; /* Center vertically */
+  position: absolute; /* Allows absolute positioning */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center it */
+  z-index: 2; /* Ensure this is on top */
+  
+ 
+}
+
+.brainstorming h9 {
+  text-align: center; /* Center text */
+  color: white;
+  font-size: 2.5vh;
+  line-height: 1.5;
+  padding-top: 8vh;
+}
+/* Brainstorming image */
+.imagesbrain {
+  width: 40vw; /* Adjust the width of the image */
+  height: 30vw; /* Keep aspect ratio */
+  padding-left: 23vw;
+  padding-top: 60vh;
+}
+
+.imagesbrain img {
+  width: auto; 
+  height: 100%; /* Keeps aspect ratio intact */
+}
+/* Inspiration text */
+.inspiration{
+  margin-top: 5vh; /* Set spacing for research section */
+  width: 70vw; /* Adjust width for text */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center align items horizontally */
+  align-items: center; /* Center vertically */
+  position: absolute; /* Allows absolute positioning */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center it */
+  z-index: 2; /* Ensure this is on top */
+}
+
+.inspiration h10 {
+  text-align: center; /* Center text */
+  color: white;
+  font-size: 4vh;
+  line-height: 1.5;
+  text-decoration: underline;
+}
+.rowinspo{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 60vh; /* Each row will fill the screen */
+  top: 10vh;
+  padding: 7vh 0; /* Reduce padding between rows */
+  position: relative;
+  left: 2vw;
+}
+
+.rowinspo img {
+  width: 21vw;
+  height: calc(21vw * 1.414);
+  padding: 1vh;
+
+}
+/* Rough sketches text */
+.roughsketches{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 60vh; /* Each row will fill the screen */
+  top: 50vh;
+  padding: 7vh 0; /* Reduce padding between rows */
+  position: relative;
+  left: 2vw;
+}
+
+.roughsketches img {
+  width: 21vw;
+  height: calc(21vw * 1.414);
+  padding: 1vh;
+
+}
+
+ h11 {
+  text-align: center; /* Center text */
+  color: rgb(255, 255, 255);
+  font-size: 4vh;
+  line-height: 1.5;
+  padding-top: 3vh;
+  width: 70vw; /* Adjust width for text */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center align items horizontally */
+  align-items: center; /* Center vertically */
+  position: absolute; /* Allows absolute positioning */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center it */
+  z-index: 2; /* Ensure this is on top */
+  text-decoration: underline;
+}
+
+h12 {
+  text-align: center; /* Center text */
+  color: rgb(255, 255, 255);
+  font-size: 2.5vh;
+  line-height: 1.5;
+  top: 333vh;
+  width: 70vw; /* Adjust width for text */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center align items horizontally */
+  align-items: center; /* Center vertically */
+  position: absolute; /* Allows absolute positioning */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center it */
+  z-index: 2; /* Ensure this is on top */
+
+}
+
+.roughsketchessecondrow{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100vh; /* Each row will fill the screen */
+  top: 115vh;
+  padding: 7vh 0; /* Reduce padding between rows */
+  position: relative;
+  left: -86vw;
+}
+
+.roughsketchessecondrow img {
+  width: 21vw;
+  height: calc(21vw * 1.414);
+  padding: 1vh;
+
+}
+h13 {
+  text-align: center; /* Center text */
+  color: rgb(255, 255, 255);
+  font-size: 4vh;
+  line-height: 1.5;
+  top: 510vh;
+  width: 70vw; /* Adjust width for text */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center align items horizontally */
+  align-items: center; /* Center vertically */
+  position: absolute; /* Allows absolute positioning */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center it */
+  z-index: 2; /* Ensure this is on top */
+  text-decoration: underline;
+
+}
+
+  .colorsketch {
+    display: flex;
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Aligns items vertically in the center */
+    gap: 2vw; /* Controls space between images, adjust as needed */
+    width: 100%;
+    top: 100vh;
+    height: 100vh;
+    position: relative;
+  
+}
+
+.colorsketch img {
+  width: 21vw;
+  height: calc(21vw * 1.414);
+ 
+}
+
+h14 {
+  text-align: center; /* Center text */
+  color: rgb(255, 255, 255);
+  font-size: 2.5vh;
+  line-height: 1.5;
+  top: 520vh;
+  width: 60vw; /* Adjust width for text */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center align items horizontally */
+  align-items: center; /* Center vertically */
+  position: absolute; /* Allows absolute positioning */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center it */
+  z-index: 1; 
+  
+
+}
+/* result */
+h15 {
+  text-align: center; /* Center text */
+  color: rgb(255, 255, 255);
+  font-size: 4vh;
+  line-height: 1.5;
+  top: 635vh;
+  width: 60vw; /* Adjust width for text */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center align items horizontally */
+  align-items: center; /* Center vertically */
+  position: absolute; /* Allows absolute positioning */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center it */
+  z-index: 1; 
+  text-decoration: underline;
+}
+
+.resultimage {
+  display: flex;
+  justify-content: flex-start; /* Align items to the start */
+  align-items: center; /* Aligns items vertically in the center */
+  width: fit-content; /* Adjust width to fit the content */
+  top: 67vh;
+  height: 100vh;
+  padding: 0; /* No padding to avoid extra space around the row */
+  position: relative;
+  margin-left: 70vw; /* Adjust this value to control how far from the left */
+}
+
+.resultimage img {
+  width: 21vw; /* Width of the images */
+  height: calc(21vw * 1.414); /* Maintain aspect ratio */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+}
+
+h16 {
+  text-align: left; /* Center text */
+  color: rgb(255, 255, 255);
+  font-size: 2.5vh;
+  line-height: 1.5;
+  top: 659vh;
+  width: 40vw; /* Adjust width for text */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center align items horizontally */
+  align-items: center; /* Center vertically */
+  position: absolute; /* Allows absolute positioning */
+  left: 30%; /* Center horizontally */
+  transform: translateX(-50%); /* Center it */
+  z-index: 1; 
+  
+}
+
+
+
+
+  
+
+

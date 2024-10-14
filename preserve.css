@@ -1,0 +1,175 @@
+@font-face {
+    font-family: "MyCustomFont";
+    src: url('https://cdn.glitch.global/fdb54953-0b9f-474d-9306-a5dd00c4e25a/Hey%20Guys!%20Demo.otf?v=1727351218815');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 160vh;
+    width: 100vw;
+  }
+  body {
+    color: #ef8eaa;
+    background: #eb5619;
+  }
+  
+  h1 {
+    text-align: center;
+    top: 20vh;
+    font-size: 8vh;
+    position: relative;
+    font-family: "MyCustomFont";
+  }
+  
+  h2 {
+    text-align: center;
+    color: aliceblue;
+    margin-top: vh;
+    font-size: 5vh;
+    position: relative;
+    font-family: "MyCustomFont";
+  }
+  
+  h3 {
+    text-align: center;
+    color: aliceblue;
+    top: 2vh;
+    font-size: 5vh;
+    position: relative;
+    font-family: "MyCustomFont";
+  }
+  
+   
+  
+  
+  .navbar {
+    position: relative;
+    top: 3vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 0;
+    z-index: 1000;
+  }
+  
+  .navbar a {
+    color: white;
+    font-size: 4vh;
+    font-family: 'MyCustomFont';
+    text-decoration: none;
+    padding: 0 6vh;
+  }
+  
+  .link1 {
+    margin-left: 6vh;
+  }
+  
+  .link4 {
+    margin-right: 6vh;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  .images1{
+    text-align: center;
+    width: 100%;
+    height: 79vh;
+    margin-top: 10vh;
+    font-size: 5vh;
+    display: flex;
+    margin-left: 7vw;
+    
+  }
+
+  h1 {
+    text-decoration: underline;
+    text-align: right; /* Center text */
+    color: rgb(255, 255, 255);
+    font-size: 4vh;
+    line-height: 1.5;
+    top:22vh;
+    width: 70vw; /* Adjust width for text */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center vertically */
+    position: absolute; /* Allows absolute positioning */
+    margin-left: 77vw; /* Center horizontally */
+    transform: translateX(-50%); /* Center it */
+    z-index: 2; /* Ensure this is on top */
+  
+  }
+  h2 {
+    text-align: right; /* Center text */
+    color: rgb(255, 255, 255);
+    font-size: 2.5vh;
+    line-height: 1.5;
+    top:32vh;
+    width: 40vw; /* Adjust width for text */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center vertically */
+    position: absolute; /* Allows absolute positioning */
+    margin-left: 70vw; /* Center horizontally */
+    transform: translateX(-50%); /* Center it */
+    z-index: 2; /* Ensure this is on top */
+  
+  }
+
+
+  h3 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 4vh;
+    margin-top: 10vh;
+    text-decoration: underline
+  }
+
+
+
+
+  .inspo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4vw;
+    margin-top: 10vh;
+    padding-bottom: 20vh;
+    
+  }
+  
+  .inspo img {
+    width: 24vw;
+    height: auto;
+    object-fit: contain;
+  }
+
+
+  
+  .inspo {
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center items */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 4vw; /* Space between images */
+    margin-top: 10vh;
+    padding-bottom: 20vh;
+    
+}
+
+.inspo-item {
+    text-align: right; /* Center text under each image */
+}
+
+.subtitle {
+    color: #ffffff; /* Subtitle text color */
+    font-size: 2vh; /* Font size for subtitles */
+    margin-top: 1vh; /* Space above subtitles */
+    line-height: 0.2vh;
+}

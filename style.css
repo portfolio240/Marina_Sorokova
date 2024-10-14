@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "MyCustomFont";
+  src: url('https://cdn.glitch.global/fdb54953-0b9f-474d-9306-a5dd00c4e25a/Hey%20Guys!%20Demo.otf?v=1727351218815');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100vw;
+}
+
+body {
+  color: #ff93b2;
+  background: #eb5619;
+}
+
+h1 {
+  text-align: center;
+  top: 20vh;
+  font-size: 8vh;
+  position: relative;
+  font-family: "MyCustomFont";
+}
+
+h2 {
+  text-align: center;
+  color: aliceblue;
+  margin-top: vh;
+  font-size: 5vh;
+  position: relative;
+  font-family: "MyCustomFont";
+}
+
+h3 {
+  text-align: center;
+  color: aliceblue;
+  top: 2vh;
+  font-size: 5vh;
+  position: relative;
+  font-family: "MyCustomFont";
+}
+
+.navbar {
+  position: relative;
+  top: 3vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  font-size: 4vh;
+  font-family: 'MyCustomFont';
+  text-decoration: none;
+  padding: 0 6vh;
+}
+
+.link1 {
+  margin-left: 6vh;
+}
+
+.link4 {
+  margin-right: 6vh;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5vh; /* Use this to evenly space out the rows */
+  top: 20vh;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 60vh; /* Each row will fill the screen */
+  padding: 7vh 0; /* Reduce padding between rows */
+}
+
+.image-container {
+  position: relative; /* Position relative to contain the overlay */
+  display: inline-block; /* Make it fit the image size */
+}
+
+.row img {
+  width: 21vw;
+  height: calc(21vw * 1.414);
+  transition: filter 0.3s ease; /* Smooth transition for the image */
+}
+
+.overlay {
+  position: absolute;
+  top: 0; /* Start from the top */
+  left: 0; /* Start from the left */
+  width: 100%; /* Cover the entire width of the image */
+  height: 100%; /* Cover the entire height of the image */
+  background: #eb5619; /* White background with some transparency */
+  color: #d5d5d5; /* Text color */
+  opacity: 0; /* Start as invisible */
+  transition: opacity 0.3s ease; /* Smooth transition for the overlay */
+  font-size: 4vh; /* Font size for the overlay text */
+  font-family: 'MyCustomFont'; /* Use your custom font */
+  display: flex; /* Use flex to center the text */
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+}
+
+.row a:hover img {
+  filter: brightness(0) invert(1); /* Change the image to white */
+}
+
+.row a:hover .overlay {
+  opacity: 1; /* Show overlay text on hover */
+}
+.imageselement {
+  width: 40vw; /* Adjust the width of the image */
+  height: auto; /* Keep aspect ratio */
+  margin-right: 6vw; /* Space between image and text */
+  position: absolute; /* Use absolute positioning */
+  top: 0; /* Position at the top of its parent */
+  margin-top: -1vh; 
+    z-index: 10; 
+}
+
+
+.imageselement img {
+  position: absolute;
+  width: 100%; 
+  height: auto; /* Keeps aspect ratio intact */
+}
+
+.imagesbird {
+  width: 20vw; /* Adjust the width of the image */
+  height: auto; /* Keep aspect ratio */
+  right: 5vw; /* Space between image and text */
+  position: absolute; /* Use absolute positioning */
+  top: 0; /* Position at the top of its parent */
+  margin-top: 30vh; 
+    z-index: 10; 
+}
+
+
+.imagesbird img {
+  position: absolute;
+  transform: scaleX(-1); /* Mirror the image horizontally */
+  width: 100%; 
+  height: auto; /* Keeps aspect ratio intact */
+}

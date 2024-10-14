@@ -1,0 +1,196 @@
+@font-face {
+    font-family: "MyCustomFont";
+    src: url('https://cdn.glitch.global/fdb54953-0b9f-474d-9306-a5dd00c4e25a/Hey%20Guys!%20Demo.otf?v=1727351218815');
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Adjust height to 100% */
+    width: 100%; /* Ensure full width */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+  
+  
+  body {
+    color: #ef8eaa;
+    background: #eb5619;
+    font-family: "MyCustomFont", sans-serif;
+  }
+  
+  .navbar {
+    position: relative;
+    top: 3vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 0;
+    z-index: 1000;
+  }
+  
+  .navbar a {
+    color: white;
+    font-size: 4vh;
+    text-decoration: none;
+    padding: 0 4vw;
+  }
+  .link1 {
+    margin-left: 6vh;
+  }
+  
+  .link4 {
+    margin-right: 6vh;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  h1 {
+    text-align: center; /* Center text */
+    color: rgb(255, 255, 255);
+    font-size: 4vh;
+    line-height: 1.5;
+    top:30vh;
+    width: 70vw; /* Adjust width for text */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center vertically */
+    position: absolute; /* Allows absolute positioning */
+    left: 81%; /* Center horizontally */
+    transform: translateX(-50%); /* Center it */
+    z-index: 2; /* Ensure this is on top */
+    text-decoration: underline;
+  }
+
+  h2 {
+    text-align: right; /* Center text */
+    color: rgb(255, 255, 255);
+    font-size: 2.5vh;
+    line-height: 1.5;
+    top:30vh;
+    width: 40vw; /* Adjust width for text */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center align items horizontally */
+    
+    position: absolute; /* Allows absolute positioning */
+    left: 70%; /* Center horizontally */
+    transform: translateX(-50%); /* Center it */
+    z-index: 2; /* Ensure this is on top */
+    padding-top: 9vh;
+  }
+  .introimg {
+    width: 27vw; /* Adjust the width of the image */
+    height: auto; /* Keep aspect ratio */
+    margin-right: 2vw; /* Space between image and text */
+    padding-left: 7vw;
+    margin-top: 10vh;
+  }
+  
+  .introimg img {
+    width: 100%; 
+    height: auto; /* Keeps aspect ratio intact */
+  }
+  h6 {
+    text-align: center; /* Center text */
+    color: rgb(255, 255, 255);
+    font-size: 4vh;
+    line-height: 1.5;
+    top:80vh;
+    width: 70vw; /* Adjust width for text */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center align items horizontally */
+    position: absolute; /* Allows absolute positioning */
+    left: 49%; /* Center horizontally */
+    transform: translateX(-50%); /* Center it */
+    z-index: 2; /* Ensure this is on top */
+    padding-top: 9vh;
+    text-decoration: underline;
+  }
+  h7 {
+    text-align: center; /* Center text */
+    color: rgb(255, 255, 255);
+    font-size: 2.5vh;
+    line-height: 1.5;
+    top:98vh;
+    width: 70vw; /* Adjust width for text */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center align items horizontally */
+    position: absolute; /* Allows absolute positioning */
+    left: 49%; /* Center horizontally */
+    transform: translateX(-50%); /* Center it */
+    z-index: 2; /* Ensure this is on top */
+    padding-top: 9vh;
+    
+  }
+  h8 {
+    text-align: center; /* Center text */
+    color: rgb(255, 255, 255);
+    font-size: 4vh;
+    line-height: 1.5;
+    top:120vh;
+    width: 70vw; /* Adjust width for text */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center align items horizontally */
+    position: absolute; /* Allows absolute positioning */
+    left: 49%; /* Center horizontally */
+    transform: translateX(-50%); /* Center it */
+    z-index: 2; /* Ensure this is on top */
+    padding-top: 9vh;
+    text-decoration: underline;
+    
+  }
+  .firstrow{
+    display: flex;
+    
+    position: absolute;
+    width: 100%;
+    height: 60vh; /* Each row will fill the screen */
+    gap: 4vw; 
+    margin-left: 23vw;
+    
+  }
+
+  .firstrow img {
+    margin-top: 50vh;
+    width: 24vw; /* Decrease width to make images smaller */
+    height: calc(24vw * 1.414); /* Adjust height accordingly */
+  }
+  .middle {
+    width: 27vw; /* Adjust the width of the image */
+    height: auto; /* Keep aspect ratio */
+    margin-right: 2vw; /* Space between image and text */
+    padding-left: 35vw;
+    margin-top: 130vh;
+    position: absolute;
+  }
+  
+  .middle img {
+    width: 100%; 
+    height: auto; /* Keeps aspect ratio intact */
+  }
+  .horizontal {
+    display: flex;
+    flex-direction: row; /* Align items in a row (horizontally) */
+    position: absolute;
+    width: 100%;
+    height: 60vh; /* Each row will fill the screen */
+    gap: 4vw; /* Space between images */
+    margin-left: 13vw;
+    margin-top: 200vh
+    /* Align images to the top */
+}
+
+.horizontal img {
+    width: 35vw; /* Set the width for landscape A4 */
+    height: calc(35vw / 1.414); /* Invert the aspect ratio to 1.414 for landscape */
+}
+
+
+
+  
