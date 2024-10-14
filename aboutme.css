@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "MyCustomFont";
+    src: url('https://cdn.glitch.global/fdb54953-0b9f-474d-9306-a5dd00c4e25a/Hey%20Guys!%20Demo.otf?v=1727351218815');
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  
+  body {
+    color: #ef8eaa;
+    background: #eb5619;
+    font-family: "MyCustomFont", sans-serif;
+  }
+  
+  .navbar {
+    position: relative;
+    top: 3vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 0;
+    z-index: 1000;
+  }
+  
+  .navbar a {
+    color: white;
+    font-size: 4vh;
+    text-decoration: none;
+    padding: 0 4vw;
+  }
+  .link1 {
+    margin-left: 6vh;
+  }
+  
+  .link4 {
+    margin-right: 6vh;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  h1 {
+    text-align: center; /* Center text */
+    color: rgb(255, 255, 255);
+    font-size: 4vh;
+    line-height: 1.5;
+    top:22vh;
+    text-decoration: underline;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center vertically */
+    position: absolute; /* Allows absolute positioning */
+    left: 80%; /* Center horizontally */
+    transform: translateX(-50%); /* Center it */
+    z-index: 2; /* Ensure this is on top */
+  
+  }
+  h2 {
+    text-align: right; /* Center text */
+    color: rgb(255, 255, 255);
+    font-size: 2.5vh;
+    line-height: 1.5;
+    top:32vh;
+    width: 40vw; /* Adjust width for text */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center vertically */
+    position: absolute; /* Allows absolute positioning */
+    left: 70%; /* Center horizontally */
+    transform: translateX(-50%); /* Center it */
+    z-index: 2; /* Ensure this is on top */
+  }
+
+  .me {
+    display: flex;
+    position: absolute;
+    
+    height: 60vh; /* Each row will fill the screen */
+    gap: 4vw; 
+    left: 13vw;
+    
+  }
+  .me img {
+    margin-top: 15vh;
+    width: 30vw; /* Set the width */
+    height: 30vw; /* Make the height equal to the width for a square shape */
+    object-fit: cover; /* This ensures the image fills the square without distortion */
+  }
+  

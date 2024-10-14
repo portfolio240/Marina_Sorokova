@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "MyCustomFont";
+  src: url('https://cdn.glitch.global/fdb54953-0b9f-474d-9306-a5dd00c4e25a/Hey%20Guys!%20Demo.otf?v=1727351218815');
+}
+
+/* Universal box-sizing for all elements */
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body {
+  color: #ef8eaa;
+  background: #eb5619;
+  font-family: "MyCustomFont", sans-serif;
+}
+
+.navbar {
+  position: relative;
+  top: 3vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  font-size: 4vh;
+  text-decoration: none;
+  padding: 0 4vw;
+}
+
+.link1 {
+  margin-left: 6vh;
+}
+
+.link4 {
+  margin-right: 6vh;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.firstrow {
+  display: flex;
+  justify-content: center; /* Center the images */
+  gap: 4vw; 
+  margin-top: 10vh; 
+  width: 100vw; /* Full-width to prevent overflow */
+  padding: 0 2vw; /* Add some padding for better spacing */
+}
+
+.firstrow img {
+  width: 25vw; /* Adjust image width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.second {
+  display: flex;
+  justify-content: center;
+  gap: 4vw; /* Space between images */
+  margin-top: 15vh;
+  width: 100vw; /* Full width */
+  padding: 0 2vw;
+}
+
+.second img {
+  width: 30vw; /* Adjust image width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.third {
+  display: flex;
+  justify-content: center;
+  gap: 4vw; /* Space between images */
+  margin-top: 15vh;
+  width: 100vw; /* Full width */
+  padding: 0 2vw;
+}
+
+.third img {
+  width: 35vw; /* Adjust image width */
+  height: auto; /* Maintain aspect ratio */
+  padding-bottom: 5vh;
+}

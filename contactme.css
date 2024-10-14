@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "MyCustomFont";
+    src: url('https://cdn.glitch.global/fdb54953-0b9f-474d-9306-a5dd00c4e25a/Hey%20Guys!%20Demo.otf?v=1727351218815');
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  
+  body {
+    color: #ef8eaa;
+    background: #eb5619;
+    font-family: "MyCustomFont", sans-serif;
+  }
+  
+  .navbar {
+    position: relative;
+    top: 3vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 0;
+    z-index: 1000;
+  }
+  
+  .navbar a {
+    color: white;
+    font-size: 4vh;
+    text-decoration: none;
+    padding: 0 4vw;
+  }
+  .link1 {
+    margin-left: 6vh;
+  }
+  
+  .link4 {
+    margin-right: 6vh;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: absolute; /* Allows for full control of positioning */
+    top: 55%; /* Push the card down by 50% of the viewport height */
+    left: 49%; /* Push the card right by 50% of the viewport width */
+    transform: translate(-50%, -50%); /* Bring it back to the exact center */
+    gap: 4vw;
+}
+
+.card img {
+    width: 25vw; /* Adjust width as needed */
+    height: calc(25vw * 1.414); /* Maintain aspect ratio */
+}
+
+
+

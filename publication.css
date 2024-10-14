@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "MyCustomFont";
+  src: url('https://cdn.glitch.global/fdb54953-0b9f-474d-9306-a5dd00c4e25a/Hey%20Guys!%20Demo.otf?v=1727351218815');
+  font-weight: normal;
+  font-style: normal;
+}
+  
+body {
+  color: #ef8eaa;
+  background: #eb5619;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.navbar {
+  position: relative;
+  top: 3vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  font-size: 4vh;
+  font-family: 'MyCustomFont';
+  text-decoration: none;
+  padding: 0 6vh;
+}
+
+.link1 {
+  margin-left: 6vh;
+}
+
+.link4 {
+  margin-right: 6vh;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center; /* Center text */
+  color: rgb(255, 255, 255);
+  font-size: 4vh;
+  line-height: 1.5;
+  top: 32vh;
+  width: 40vw; /* Keep width, adjust if needed */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center align items horizontally */
+  align-items: center; /* Center vertically */
+  position: absolute; /* Allows absolute positioning */
+  left: 75%; /* Position from left */
+  transform: translateX(-50%); /* Center it */
+  z-index: 2; /* Ensure this is on top */
+  font-family: "MyCustomFont";
+  text-decoration: underline;
+}
+
+h2 {
+  text-align: right; /* Right align */
+  color: rgb(255, 255, 255);
+  font-size: 2.5vh;
+  line-height: 1.5;
+  top: 35vh;
+  width: 40vw; /* Adjust width for text */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center align items horizontally */
+  font-family: "MyCustomFont";
+  position: absolute; /* Allows absolute positioning */
+  left: 70%; /* Position from left */
+  transform: translateX(-50%); /* Center it */
+  z-index: 2; /* Ensure this is on top */
+  padding-top: 7vh;
+}
+
+h3 {
+  color: rgb(255, 255, 255);
+  font-size: 4vh;
+  line-height: 1.5;
+  display: flex;
+  margin-top: 2vh;
+  font-family: "MyCustomFont";
+  position: absolute; /* Allows absolute positioning */
+  right:120vw;
+  text-decoration: underline;
+}
+
+h4 {
+  text-align: left; /* Align left */
+  color: rgb(255, 255, 255);
+  font-size: 2.5vh;
+  line-height: 1.5;
+  top: 115vh;
+  width: 40vw; /* Adjust width for text */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center align items horizontally */
+  font-family: "MyCustomFont";
+  position: absolute; /* Allows absolute positioning */
+  left: 30%; /* Position from left */
+  transform: translateX(-50%); /* Center it */
+  z-index: 2; /* Ensure this is on top */
+  padding-top: 7vh;
+}
+
+.imageintro {
+  width: 27vw; /* Adjust the width of the image */
+  height: auto; /* Keep aspect ratio */
+  margin-right: 2vw; /* Space between image and text */
+  padding-left: 7vw;
+  padding-top: 10vh;
+}
+
+.imageintro img {
+  width: 100%; 
+  height: auto; /* Keeps aspect ratio intact */
+}
+
+.research {
+  display: flex;
+  flex-direction: row; /* Align items in a row (horizontally) */
+  position: absolute;
+  width: 100%; /* Set width to fill the container */
+  height: 4vh; /* Each row will fill the screen */
+  gap: 4vw; /* Space between images */
+  left: 55vw;
+  margin-top: 20vh; /* Maintain vertical position */
+}
+
+.research img {
+  width: 35vw; /* Set the width for landscape A4 */
+  height: calc(35vw / 1.414); /* Maintain aspect ratio */
+}
+
+.horizontal {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 100%; /* Set width to fill the container */
+  padding: 7vh 0; /* Maintain padding */
+  margin-top: 76vh; /* Keep this for vertical spacing */
+}
+
+.horizontal img {
+  width: 20vw; /* Set width in vw to ensure consistency across screen sizes */
+  object-fit: cover; /* Ensures the image fits nicely within the square without stretching */
+}
+
+.horizontal1, 
+.horizontal2, 
+.horizontal3, 
+.horizontal4, 
+.horizontal5, 
+.horizontal6 {
+  display: flex;
+  flex-direction: row; /* Align items in a row (horizontally) */
+  justify-content: center; /* Center the images in each horizontal section */
+  align-items: center; /* Center vertically */
+  width: 100%; /* Ensure full width */
+  height: 60vh; /* Each row will fill the screen */
+  gap: 4vw; /* Space between images */
+  margin: 1vh 0; /* Add 1vh margin to create space between rows */
+}
+
+.horizontal1 img,
+.horizontal2 img,
+.horizontal3 img,
+.horizontal4 img,
+.horizontal5 img,
+.horizontal6 img {
+  width: 35vw; /* Set the width for landscape A4 */
+  height: calc(35vw / 1.414); /* Invert the aspect ratio to 1.414 for landscape */
+}
+
+.glow-in-the-dark {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  width: 100%; /* Set width to fill the container */
+  padding: 7vh 0; /* Maintain padding */
+  margin-top: 5vh; /* Maintain vertical position */
+}
+
+.glow-in-the-dark img {
+  width: 20vw; /* Set width in vw to ensure consistency across screen sizes */
+  object-fit: cover; /* Ensures the image fits nicely within the square without stretching */
+}
